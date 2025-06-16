@@ -36,25 +36,25 @@ export async function GET(req: NextRequest) {
       actions: [
         {
           type: 'dynamic',
-          label: 'Donar y Votar',
-          description: 'Realiza tu donación y vota por una de las propuestas activas.',
+          label: 'Donate & Vote',
+          description: 'Make your donation and vote for one of the active proposals',
           chains: { source: 'fuji' },
           path: `/api/mi-app`,
           params: [
             {
               name: 'monto',
               type: 'radio',
-              label: 'Tip Amount',
+              label: 'Donation Amount',
               required: true,
               options: [
-                { label: 'Small Tip 0.01 Avax', value: 0.01, description: '0.01 AVAX' },
-                { label: 'Medium Tip 0.05 Avax', value: 0.05, description: '0.05 AVAX' },
-                { label: 'Large Tip 0.1 Avax', value: 0.1, description: '0.1 AVAX' }
+                { label: 'Small donation 0.01 Avax', value: 0.01, description: '0.01 AVAX' },
+                { label: 'Medium donation 0.05 Avax', value: 0.05, description: '0.05 AVAX' },
+                { label: 'Large donatio 0.1 Avax', value: 0.1, description: '0.1 AVAX' }
               ],
           },
           {
             name: 'voto',
-            label: 'Selecciona tu voto',
+            label: 'Select your vote',
             type: 'select',
             required: true,
             options: dynamicOptions,
