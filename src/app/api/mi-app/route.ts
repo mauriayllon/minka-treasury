@@ -49,7 +49,7 @@ export async function GET(req: NextRequest) {
               options: [
                 { label: 'Small donation 0.01 Avax', value: 0.01, description: '0.01 AVAX' },
                 { label: 'Medium donation 0.05 Avax', value: 0.05, description: '0.05 AVAX' },
-                { label: 'Large donatio 0.1 Avax', value: 0.1, description: '0.1 AVAX' }
+                { label: 'Large donation 0.1 Avax', value: 0.1, description: '0.1 AVAX' }
               ],
           },
           {
